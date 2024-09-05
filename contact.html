@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact</title>
+  <link rel="stylesheet" type = text/css href="../css/myStyles.css">
+</head>
+<body>
+<div>
+    <nav>                       <!--Navigation bar -->
+      <div class="logo">        <!--create logo -->
+        <a href="../index.html">   
+          <img src = "../images/milogo.png">
+        </a>
+      </div> 
+        <div>
+          <ul  class ="nav">    <!--create listy for the navigation bar -->
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+<main>
+  <div class="container"> 
+    <!--Create header on the form -->
+    <header class="headerForm">Product Enquiry Form</header>
+
+    <!--Create submission oF the form  NOT WORKING-->
+    <form action="action_page.php">
+
+       <!--Create name input on the form -->
+      <label for="fullname">Full Name :</label>
+      <input type="text" id="fullname" placeholder="Full Name">
+            
+       <!--Create e-mail input on the form -->
+      <label for="e-mail">Email :</label>
+      <input type="text" id="E-mail" placeholder="E-mail">
+
+      <!--Create header for the selection of products--> 
+      <label for="product">Product :</label>
+
+      <!--Create product selection options -->
+      <select name="product" id="product">
+        <option value="drinkingmug">Drinking Mug</option>
+        <option value="headcap">Head Cap</option>
+        <option value="teeshirt">Tee Shirt</option>  
+        <option value="photo_magnet">Photo Magnet</option>
+        <option value="travelmug">Travel Mug</option>
+      </select>
+
+      <!--Create message input on the form -->
+      <label for="subject">Message :</label>
+      <textarea name="product" id="Product" 
+        placeholder="Your Message" 
+        style="height: 100px;">
+      </textarea>
+
+       <!--Create checkbox input on the form -->
+      <input type="checkbox" id="subscribe" placeholder="Subscribe">
+      <label for="subscribe">Subscribe to our newsletter.</label>
+
+       <!--Create form submission-->
+      <input type="submit" value="Submit">       
+    </form>
+  </div>        
+</main>      
+  
+</body>
+</html>
